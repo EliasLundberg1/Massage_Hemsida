@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="sv"> <!--Fixar så att hemsidans grund språk är svenska-->
+    <head>
+        <meta charset="UTF-8"> <!--Gör så att hemsidan har en fast stil på "the characters"-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--Fixar så att hemsidan funkar på alla skärmar("width=device-width")-->
+        <title>Massager</title> <!--Titeln på min hemsida(det som står i lilla fliken)-->
+        <link href="Utseende.css" rel="stylesheet" type="text/css"> <!--Länkar in min CSS fil-->
+        <script src="/Java.js"></script> <!--Länkar in min Java fil-->
+    </head>
+    <body>
+        <header>
+            <h1>Massage Center</h1>
+        </header>
+        <nav>
+            <select onchange="navigate()">
+                <option value="#home">Hem</option>
+                <option value="#services">Tjänster</option>
+                <option value="#contact">Kontakta Oss</option>
+            </select>
+        </nav>
+        <section id="home">
+            <h2 id="changeColorElement">Välkommen till Massage Center</h2>
+            <p>Vi har massage för att möta dina önskningar, som klassisk massage eller sport massage</p>
+        </section>
+        <section id="services">
+            <h2>Våra Tjänster</h2>
+            <p>Här kan du se alla våra tjänster vi har att erbjuda:</p>
+            <ul>
+                <li>Sport massage (30 min, 60 min, 90 min)</li>
+                <li>Klassisk massage (30 min, 60 min, 90 min)</li>
+            </ul>
+            <p>Boka om du vill ha en skön och trevlig upplevelse</p>
+        </section>
+        <section id="contact">
+            <h2>Våran kontaktinfo</h2>
+            <p>Om du undrar något eller vill boka en tid, hör av er på något av alternativen:</p>
+            <adress>
+                E-post: info@massagecenter.com 
+                Telefon: 073-111-1111
+            </adress>
+        </section>
+        <footer>
+            <p>&copy; 2023 Massage Center. Allt har vi kommit på själv, 100%</p>
+        </footer>
+    </body>
+</html>

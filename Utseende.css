@@ -1,0 +1,42 @@
+body { /*Bestämmer hur main delen av sidan ska se ut*/
+    font-family: Arial, sans-serif; /*Gör att texten på sidan är Arial*/
+    background-color: #6699FF; /*Bakgrundsfärgen är blå*/
+    color: rgb(255, 255, 255); /*Texten på hemsidan är antik vit*/ 
+}
+
+header, nav, section, footer {
+    padding: 10px; /*Lägger till "padding" som är mellenrummet mellan kanten och texten inut*/
+}
+
+header, nav, footer {
+    background-color: rgb(255, 255, 255); /*bakgrundsfärgen för header, nav och footer*/
+    color: black; /*textfärgen för --||--*/
+}
+
+ul {
+    list-style-type: none; /*gör att punkterna brevid försvinner*/
+    padding: 0; /*tar bort inre "paddingen" för listorna*/
+    margin: 0; /*tar bort yttre "paddningen" för listorna*/
+}
+
+li {
+    display: inline; /*visar listorna i rader istället för kolumner*/
+    margin-right: 10px; /*listorna har en 10 px marginal från höger*/
+}
+
+#changeColorElement, #changeBackgroundColorElement {
+    cursor: pointer; /*gör så att när musen är över "#changeColorElement" och "#changeBackgroundColorElement" blir det en hand istället*/
+}
+
+select {
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #6666FF;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+select option {
+    background-color: #fff;
+    color: #333;
+}
