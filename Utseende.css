@@ -1,22 +1,22 @@
 body { /*Bestämmer hur main delen av sidan ska se ut*/
     font-family: Arial, sans-serif; /*Gör att texten på sidan är Arial*/
     background-color: #6699FF; /*Bakgrundsfärgen är blå*/
-    color: rgb(255, 255, 255); /*Texten på hemsidan är antik vit*/ 
+    color: rgb(255, 255, 255); /*Texten på hemsidan är vit*/ 
 }
 
 header, nav, section, footer {
-    padding: 10px; /*Lägger till "padding" som är mellenrummet mellan kanten och texten inut*/
+    padding: 2%; 
 }
 
 header, nav, footer {
-    background-color: rgb(255, 255, 255); /*bakgrundsfärgen för header, nav och footer*/
-    color: black; /*textfärgen för --||--*/
+    background-color: #fff; /*bakgrundsfärgen för header, nav och footer*/
+    color: #333; /*textfärgen för --||--*/
 }
 
 ul {
     list-style-type: none; /*gör att punkterna brevid försvinner*/
-    padding: 0; /*tar bort inre "paddingen" för listorna*/
-    margin: 0; /*tar bort yttre "paddningen" för listorna*/
+    padding: 0; /*tar bort den inre marginalen för listorna*/
+    margin: 0; /*tar bort den yttre marginalen för listorna*/
 }
 
 li {
@@ -24,19 +24,20 @@ li {
     margin-right: 10px; /*listorna har en 10 px marginal från höger*/
 }
 
-#changeColorElement, #changeBackgroundColorElement {
-    cursor: pointer; /*gör så att när musen är över "#changeColorElement" och "#changeBackgroundColorElement" blir det en hand istället*/
-}
-
 select {
-    padding: 8px;
-    font-size: 16px;
-    border: 1px solid #6666FF;
-    border-radius: 5px;
-    margin-right: 10px;
+    padding: 2%;                  /*En marginal på 2% för drop down menyn*/
+    font-size: 4vw;               /*Textens storlek i drop down menyn till 4% av viewport bredden*/
+    border: 1px solid #6666FF;  /*En kant som är 1 px runt drop down menyn med en blå färg*/
+    border-radius: 1%;            /*Gör avrundade kanter med en radie på 1%*/
+    margin-right: 2%;             /*Ger en marginal på 2% för att ge utrymme för närliggande element*/
 }
 
 select option {
-    background-color: #fff;
-    color: #333;
+    background-color: #fff;     /*Fixar backgrundsfärgen för dropdown menyn*/
+    color: #333;                /*Fixar färgen för texten i dropdown menyn*/
+}
+
+.dark-mode {
+    background-color: #333;     /*Byter till motsatt färg*/
+    color: #fff;                /*Byter till motsatt färg*/
 }
